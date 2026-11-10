@@ -1,0 +1,152 @@
+<title>Correlatividades - Instituto Lacademia</title>
+<style>
+  :root { --bg:#fbfaf7; --fg:#2b2a27; --muted:#6b675e; --acc:#1a4389; --verde:#21a340; --line:#e3dfd6; --warn:#fff4d6; --warnb:#e8c15a; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --bg:#1d1c1a; --fg:#eeebe4; --muted:#a8a296; --acc:#7fa6e6; --verde:#4cc26a; --line:#3a3833; --warn:#3b3117; --warnb:#8a7330; }
+  }
+  :root[data-theme="dark"] { --bg:#1d1c1a; --fg:#eeebe4; --muted:#a8a296; --acc:#7fa6e6; --verde:#4cc26a; --line:#3a3833; --warn:#3b3117; --warnb:#8a7330; }
+  body { margin:0; background:var(--bg); color:var(--fg); font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; line-height:1.45; }
+  main { max-width: 900px; margin: 0 auto; padding: 16px; }
+  h1 { font-size: 1.5rem; margin: .4rem 0; padding-bottom: 6px; border-bottom: 3px solid var(--verde); }
+  h2 { font-size: 1.15rem; color: var(--acc); margin: 1.6rem 0 .6rem; }
+  h3 { font-size: 1rem; margin: 1.1rem 0 .3rem; }
+  .muted { color: var(--muted); font-size: .92rem; }
+  nav { display:flex; gap:8px; flex-wrap:wrap; margin: 12px 0; }
+  nav button { border:1px solid var(--line); background:transparent; color:var(--fg); padding:8px 12px; border-radius:8px; cursor:pointer; font: inherit; }
+  nav button[aria-selected="true"] { background: var(--acc); color:#fff; border-color: var(--acc); }
+  section[hidden] { display:none; }
+  .aviso { background: var(--warn); border:1px solid var(--warnb); border-left: 4px solid var(--verde); border-radius:8px; padding:10px 12px; font-size:.92rem; margin: 10px 0; }
+  table { width:100%; border-collapse: collapse; font-size: .92rem; }
+  th, td { text-align:left; vertical-align: top; padding: 7px 6px; border-bottom: 1px solid var(--line); }
+  th { color: var(--muted); font-weight: 600; font-size: .85rem; }
+  .warn { color: #9a6a00; font-weight: 600; }
+  @media (max-width: 600px) {
+    table, thead, tbody, tr, th, td { display:block; }
+    thead { display:none; }
+    tr { border-bottom: 1px solid var(--line); padding: 8px 0; }
+    td { border:none; padding: 2px 0; }
+    td::before { content: attr(data-label) ": "; color: var(--muted); font-size:.82rem; }
+  }
+</style>
+<main>
+  <h1>Correlatividades - Instituto Lacademia</h1>
+  <p class="muted">Profesorado de Inglés y Tecnicatura Superior en Analista Programador Web.</p>
+
+  <nav role="tablist">
+    <button role="tab" aria-selected="true" data-tab="prof">Profesorado de Inglés</button>
+    <button role="tab" aria-selected="false" data-tab="tec">Tecnicatura Analista Programador Web</button>
+  </nav>
+
+  <section id="prof">
+    <div class="aviso"><strong>Plan de estudios:</strong> Resolución MECyT 305/23.</div>
+
+    <h2>Primer año</h2>
+    <table>
+      <thead><tr><th>Unidad curricular</th><th>Régimen</th><th>Para cursar, regularizar</th><th>Para aprobar, tener aprobado</th></tr></thead>
+      <tbody>
+        <tr><td data-label="Unidad">Pedagogía</td><td data-label="Régimen">Anual, promocional</td><td data-label="Cursar">Sin correlatividades</td><td data-label="Aprobar">Sin correlatividades</td></tr>
+        <tr><td data-label="Unidad">Filosofía</td><td data-label="Régimen">Anual, promocional</td><td data-label="Cursar">Sin correlatividades</td><td data-label="Aprobar">Sin correlatividades</td></tr>
+        <tr><td data-label="Unidad">Taller de Oralidad, Lectura y Escritura</td><td data-label="Régimen">Anual, promocional</td><td data-label="Cursar">Sin correlatividades</td><td data-label="Aprobar">Sin correlatividades</td></tr>
+        <tr><td data-label="Unidad">Lengua Cultura Inglesa I</td><td data-label="Régimen">Anual, examen final</td><td data-label="Cursar">Sin correlatividades</td><td data-label="Aprobar">Sin correlatividades</td></tr>
+        <tr><td data-label="Unidad">Fonética y Fonología Inglesa I</td><td data-label="Régimen">Anual, examen final</td><td data-label="Cursar">Sin correlatividades</td><td data-label="Aprobar">Sin correlatividades</td></tr>
+        <tr><td data-label="Unidad">Gramática Inglesa I</td><td data-label="Régimen">Anual, examen final</td><td data-label="Cursar">Sin correlatividades</td><td data-label="Aprobar">Sin correlatividades</td></tr>
+        <tr><td data-label="Unidad">Práctica I</td><td data-label="Régimen">Anual, examen final</td><td data-label="Cursar">Sin correlatividades</td><td data-label="Aprobar">Sin correlatividades</td></tr>
+        <tr><td data-label="Unidad">Tecnología Aplicada a la Enseñanza del Inglés</td><td data-label="Régimen">Anual, promocional</td><td data-label="Cursar">Sin correlatividades</td><td data-label="Aprobar">Sin correlatividades</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Segundo año</h2>
+    <table>
+      <thead><tr><th>Unidad curricular</th><th>Régimen</th><th>Para cursar, regularizar</th><th>Para aprobar, tener aprobado</th></tr></thead>
+      <tbody>
+        <tr><td data-label="Unidad">Psicología Educacional</td><td data-label="Régimen">Anual, promocional</td><td data-label="Cursar">Pedagogía, Filosofía, Taller de Oralidad</td><td data-label="Aprobar">Pedagogía, Filosofía, Taller de Oralidad</td></tr>
+        <tr><td data-label="Unidad">Didáctica General</td><td data-label="Régimen">Anual, promocional</td><td data-label="Cursar">Pedagogía, Taller de Oralidad</td><td data-label="Aprobar">Pedagogía, Taller de Oralidad</td></tr>
+        <tr><td data-label="Unidad">Tecnologías de la Información y la Comunicación</td><td data-label="Régimen">Anual, promocional</td><td data-label="Cursar">Pedagogía, Taller de Oralidad</td><td data-label="Aprobar">Pedagogía, Taller de Oralidad</td></tr>
+        <tr><td data-label="Unidad">Lengua Cultura Inglesa II</td><td data-label="Régimen">Anual, examen final</td><td data-label="Cursar">Lengua Cultura Inglesa I, Fonética y Fonología Inglesa I, Gramática Inglesa I</td><td data-label="Aprobar">Lengua Cultura Inglesa I</td></tr>
+        <tr><td data-label="Unidad">Fonética y Fonología Inglesa II</td><td data-label="Régimen">Anual, examen final</td><td data-label="Cursar">Lengua Cultura Inglesa I</td><td data-label="Aprobar">Fonética y Fonología Inglesa I</td></tr>
+        <tr><td data-label="Unidad">Gramática Inglesa II</td><td data-label="Régimen">Anual, examen final</td><td data-label="Cursar">Lengua Cultura Inglesa I, Fonética y Fonología Inglesa I, Gramática Inglesa I</td><td data-label="Aprobar">Gramática Inglesa I</td></tr>
+        <tr><td data-label="Unidad">Sujeto de la Educación I</td><td data-label="Régimen">1er cuatrimestre, promocional</td><td data-label="Cursar">Pedagogía, Lengua Cultura Inglesa I</td><td data-label="Aprobar">Pedagogía</td></tr>
+        <tr><td data-label="Unidad">Didáctica del Inglés como Lengua Extranjera I</td><td data-label="Régimen">Anual, examen final</td><td data-label="Cursar">Psicología Educacional, Didáctica General, Sujeto de la Educación I</td><td data-label="Aprobar">Didáctica General, Lengua Cultura Inglesa I</td></tr>
+        <tr><td data-label="Unidad">Literatura Infantil</td><td data-label="Régimen">2do cuatrimestre, promocional</td><td data-label="Cursar">Taller de Oralidad, Lengua Cultura Inglesa I, Fonética y Fonología Inglesa I, Gramática Inglesa I</td><td data-label="Aprobar">Sin correlatividades</td></tr>
+        <tr><td data-label="Unidad">Práctica II</td><td data-label="Régimen">Anual, examen final</td><td data-label="Cursar">Pedagogía, Taller de Oralidad, Lengua Cultura Inglesa I, Fonética y Fonología Inglesa I, Gramática Inglesa I</td><td data-label="Aprobar">Práctica I</td></tr>
+        <tr><td data-label="Unidad">Robótica y Programación en la Enseñanza del Inglés</td><td data-label="Régimen">Anual, promocional</td><td data-label="Cursar">Tecnología Aplicada a la Enseñanza del Inglés</td><td data-label="Aprobar">Tecnología Aplicada a la Enseñanza del Inglés</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Tercer año</h2>
+    <table>
+      <thead><tr><th>Unidad curricular</th><th>Régimen</th><th>Para cursar, regularizar</th><th>Para aprobar, tener aprobado</th></tr></thead>
+      <tbody>
+        <tr><td data-label="Unidad">Educación Sexual Integral</td><td data-label="Régimen">1er cuatrimestre, promocional</td><td data-label="Cursar">Sujeto de la Educación II</td><td data-label="Aprobar">Psicología Educacional, Sujeto de la Educación I</td></tr>
+        <tr><td data-label="Unidad">Sociología de la Educación</td><td data-label="Régimen">2do cuatrimestre, promocional</td><td data-label="Cursar">Psicología Educacional</td><td data-label="Aprobar">Pedagogía</td></tr>
+        <tr><td data-label="Unidad">Lengua Cultura Inglesa III</td><td data-label="Régimen">Anual, examen final</td><td data-label="Cursar">Lengua Cultura Inglesa II, Fonética y Fonología Inglesa II, Gramática Inglesa II</td><td data-label="Aprobar">Fonética y Fonología Inglesa I, Gramática Inglesa I, Lengua Cultura Inglesa II</td></tr>
+        <tr><td data-label="Unidad">Fonología y Dicción</td><td data-label="Régimen">Anual, promocional</td><td data-label="Cursar">Lengua Cultura Inglesa II, Fonética y Fonología Inglesa II, Gramática Inglesa II</td><td data-label="Aprobar">Lengua Cultura Inglesa I, Fonética y Fonología Inglesa I, Gramática Inglesa I, Fonética y Fonología Inglesa II</td></tr>
+        <tr><td data-label="Unidad">Literatura Inglesa y Norteamericana</td><td data-label="Régimen">Anual, promocional</td><td data-label="Cursar">Lengua Cultura Inglesa II, Literatura Infantil</td><td data-label="Aprobar">Sin correlatividades</td></tr>
+        <tr><td data-label="Unidad">Literatura Juvenil</td><td data-label="Régimen">1er cuatrimestre, promocional</td><td data-label="Cursar">Lengua Cultura Inglesa II, Literatura Infantil</td><td data-label="Aprobar">Sin correlatividades</td></tr>
+        <tr><td data-label="Unidad">Didáctica del Inglés como Lengua Extranjera II</td><td data-label="Régimen">Anual, promocional</td><td data-label="Cursar">Lengua Cultura Inglesa II, Didáctica del Inglés como Lengua Extranjera I</td><td data-label="Aprobar">Pedagogía, Taller de Oralidad, Didáctica del Inglés como Lengua Extranjera I</td></tr>
+        <tr><td data-label="Unidad">Sujeto de la Educación II</td><td data-label="Régimen">1er cuatrimestre, promocional</td><td data-label="Cursar">Lengua Cultura Inglesa II, Sujeto de la Educación I</td><td data-label="Aprobar">Pedagogía, Sujeto de la Educación I</td></tr>
+        <tr><td data-label="Unidad">Lingüística I</td><td data-label="Régimen">2do cuatrimestre, examen final</td><td data-label="Cursar">Lengua Cultura Inglesa II, Fonética y Fonología Inglesa II, Gramática Inglesa II</td><td data-label="Aprobar">Lengua Cultura Inglesa II, Fonética y Fonología Inglesa II, Gramática Inglesa II</td></tr>
+        <tr><td data-label="Unidad">Práctica III</td><td data-label="Régimen">Anual, examen final</td><td data-label="Cursar">Tecnología de la Información y la Comunicación, Lengua Cultura Inglesa II, Fonética y Fonología Inglesa II, Gramática Inglesa II, Didáctica del Inglés como Lengua Extranjera I, Literatura Infantil</td><td data-label="Aprobar">Pedagogía, Taller de Oralidad, Lengua Cultura Inglesa I, Fonética y Fonología Inglesa I, Gramática Inglesa I, Práctica II</td></tr>
+        <tr><td data-label="Unidad">Metodologías activas de aprendizaje</td><td data-label="Régimen">Anual, promocional</td><td data-label="Cursar">Robótica y Programación en la Enseñanza del Inglés</td><td data-label="Aprobar">Robótica y Programación en la Enseñanza del Inglés</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Cuarto año</h2>
+    <table>
+      <thead><tr><th>Unidad curricular</th><th>Régimen</th><th>Para cursar, regularizar</th><th>Para aprobar, tener aprobado</th></tr></thead>
+      <tbody>
+        <tr><td data-label="Unidad">Formación Ética y Ciudadana</td><td data-label="Régimen">1er cuatrimestre, promocional</td><td data-label="Cursar">Sociología de la Educación</td><td data-label="Aprobar">Sociología de la Educación</td></tr>
+        <tr><td data-label="Unidad">Historia y Política de la Educación Argentina</td><td data-label="Régimen">2do cuatrimestre, promocional</td><td data-label="Cursar">Sin correlatividades</td><td data-label="Aprobar">Pedagogía, Filosofía, Taller de Oralidad</td></tr>
+        <tr><td data-label="Unidad">Lengua Cultura Inglesa IV</td><td data-label="Régimen">Anual, examen final</td><td data-label="Cursar">Lengua Cultura Inglesa III, Fonología y Dicción</td><td data-label="Aprobar">Lengua Cultura Inglesa II, Fonética y Fonología Inglesa II, Gramática Inglesa II, Lengua Cultura Inglesa III</td></tr>
+        <tr><td data-label="Unidad">Lingüística II</td><td data-label="Régimen">Anual, examen final</td><td data-label="Cursar">Lengua Cultura Inglesa III, Didáctica del Inglés como Lengua Extranjera II, Lingüística I</td><td data-label="Aprobar">Lingüística I</td></tr>
+        <tr><td data-label="Unidad">Literatura de los Países de Habla Inglesa</td><td data-label="Régimen">1er cuatrimestre, promocional</td><td data-label="Cursar">Lengua Cultura Inglesa III, Literatura Inglesa y Norteamericana</td><td data-label="Aprobar">Lengua Cultura Inglesa II, Literatura Infantil</td></tr>
+        <tr><td data-label="Unidad">Literatura Inglesa y Norteamericana Contemporánea</td><td data-label="Régimen">2do cuatrimestre, promocional</td><td data-label="Cursar">Lengua Cultura Inglesa III, Literatura Inglesa y Norteamericana</td><td data-label="Aprobar">Lengua Cultura Inglesa II, Literatura Infantil</td></tr>
+        <tr><td data-label="Unidad">Residencia Pedagógica</td><td data-label="Régimen">Anual, prácticas docentes</td><td data-label="Cursar">Lengua Cultura Inglesa III, Fonología y Dicción, Literatura Inglesa y Norteamericana, Literatura Juvenil, Sujeto de la Educación II, Lingüística I</td><td data-label="Aprobar">Lengua Cultura Inglesa II, Fonética y Fonología Inglesa II, Gramática Inglesa II, Didáctica del Inglés como Lengua Extranjera II, Práctica III</td></tr>
+        <tr><td data-label="Unidad">Innovación Pedagógica</td><td data-label="Régimen">Anual, promocional</td><td data-label="Cursar">Metodologías activas de aprendizaje</td><td data-label="Aprobar">Metodologías activas de aprendizaje</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="tec" hidden>
+    <div class="aviso"><strong>Plan de estudios:</strong> Resolución SPEPM 239/00.</div>
+
+    <h2>Primer año</h2>
+    <table>
+      <thead><tr><th>Unidad curricular</th><th>Régimen</th><th>Para cursar, regularizar</th><th>Para aprobar, tener aprobado</th></tr></thead>
+      <tbody>
+        <tr><td data-label="Unidad">Lenguajes I</td><td data-label="Régimen">No disponible</td><td data-label="Cursar">Sin correlatividades</td><td data-label="Aprobar">Sin correlatividades</td></tr>
+        <tr><td data-label="Unidad">Internet I</td><td data-label="Régimen">No disponible</td><td data-label="Cursar">Sin correlatividades</td><td data-label="Aprobar">Sin correlatividades</td></tr>
+        <tr><td data-label="Unidad">Matemática I</td><td data-label="Régimen">No disponible</td><td data-label="Cursar">Sin correlatividades</td><td data-label="Aprobar">Sin correlatividades</td></tr>
+        <tr><td data-label="Unidad">Sistemas Operativos I</td><td data-label="Régimen">No disponible</td><td data-label="Cursar">Sin correlatividades</td><td data-label="Aprobar">Sin correlatividades</td></tr>
+        <tr><td data-label="Unidad">Herramientas I</td><td data-label="Régimen">No disponible</td><td data-label="Cursar">Sin correlatividades</td><td data-label="Aprobar">Sin correlatividades</td></tr>
+        <tr><td data-label="Unidad">Diseño I</td><td data-label="Régimen">No disponible</td><td data-label="Cursar">Sin correlatividades</td><td data-label="Aprobar">Sin correlatividades</td></tr>
+        <tr><td data-label="Unidad">Inglés Técnico I</td><td data-label="Régimen">No disponible</td><td data-label="Cursar">Sin correlatividades</td><td data-label="Aprobar">Sin correlatividades</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Segundo año</h2>
+    <table>
+      <thead><tr><th>Unidad curricular</th><th>Régimen</th><th>Para cursar, regularizar</th><th>Para aprobar, tener aprobado</th></tr></thead>
+      <tbody>
+        <tr><td data-label="Unidad">Lenguajes II</td><td data-label="Régimen">Anual, examen final</td><td data-label="Cursar">Lenguajes I (regularizada)</td><td data-label="Aprobar">Lenguajes I (aprobada)</td></tr>
+        <tr><td data-label="Unidad">Multimedia</td><td data-label="Régimen">No disponible</td><td data-label="Cursar">No disponible</td><td data-label="Aprobar">No disponible</td></tr>
+        <tr><td data-label="Unidad">Herramientas II</td><td data-label="Régimen">Anual, examen final</td><td data-label="Cursar">Herramientas I (regularizada)</td><td data-label="Aprobar">Herramientas I (aprobada)</td></tr>
+        <tr><td data-label="Unidad">Ética y Deontología Profesional</td><td data-label="Régimen">No disponible</td><td data-label="Cursar">No disponible</td><td data-label="Aprobar">No disponible</td></tr>
+        <tr><td data-label="Unidad">Diseño II</td><td data-label="Régimen">Anual, examen final</td><td data-label="Cursar">Diseño I (regularizada)</td><td data-label="Aprobar">Diseño I (aprobada)</td></tr>
+        <tr><td data-label="Unidad">Marketing</td><td data-label="Régimen">No disponible</td><td data-label="Cursar">No disponible</td><td data-label="Aprobar">No disponible</td></tr>
+        <tr><td data-label="Unidad">Inglés Técnico II</td><td data-label="Régimen">Anual, examen final</td><td data-label="Cursar">Inglés Técnico I (regularizada)</td><td data-label="Aprobar">Inglés Técnico I (aprobada)</td></tr>
+        <tr><td data-label="Unidad">Base de Datos</td><td data-label="Régimen">No disponible</td><td data-label="Cursar">No disponible</td><td data-label="Aprobar">No disponible</td></tr>
+        <tr><td data-label="Unidad">Probabilidad y Estadística</td><td data-label="Régimen">No disponible</td><td data-label="Cursar">No disponible</td><td data-label="Aprobar">No disponible</td></tr>
+        <tr><td data-label="Unidad">Tesis</td><td data-label="Régimen">No disponible</td><td data-label="Cursar">Todas las materias de 2° año regularizadas</td><td data-label="Aprobar">Todas las materias de 1° año aprobadas</td></tr>
+      </tbody>
+    </table>
+  </section>
+</main>
+<script>
+  const tabs = document.querySelectorAll('nav [role="tab"]');
+  tabs.forEach(t => t.addEventListener('click', () => {
+    tabs.forEach(x => x.setAttribute('aria-selected', x === t ? 'true' : 'false'));
+    document.getElementById('prof').hidden = t.dataset.tab !== 'prof';
+    document.getElementById('tec').hidden = t.dataset.tab !== 'tec';
+  }));
+</script>
