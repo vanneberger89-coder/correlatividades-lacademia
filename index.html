@@ -16,6 +16,12 @@
   nav button[aria-selected="true"] { background: var(--acc); color:#fff; border-color: var(--acc); }
   section[hidden] { display:none; }
   .aviso { background: var(--warn); border:1px solid var(--warnb); border-left: 4px solid var(--verde); border-radius:8px; padding:10px 12px; font-size:.92rem; margin: 10px 0; }
+  details { border-bottom: 1px solid var(--line); margin: 6px 0; }
+  summary { cursor: pointer; color: var(--acc); font-weight: 700; font-size: 1.1rem; padding: 12px 0; list-style: none; }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: "＋"; float: right; font-weight: 400; color: var(--muted); }
+  details[open] summary::after { content: "−"; }
+  details table { margin-bottom: 12px; }
   table { width:100%; border-collapse: collapse; font-size: .92rem; }
   th, td { text-align:left; vertical-align: top; padding: 7px 6px; border-bottom: 1px solid var(--line); }
   th { color: var(--muted); font-weight: 600; font-size: .85rem; }
@@ -40,7 +46,8 @@
   <section id="prof">
     <div class="aviso"><strong>Plan de estudios:</strong> Resolución MECyT 305/23.</div>
 
-    <h2>Primer año</h2>
+    <details>
+      <summary>Primer año</summary>
     <table>
       <thead><tr><th>Unidad curricular</th><th>Régimen</th><th>Para cursar, regularizar</th><th>Para aprobar, tener aprobado</th></tr></thead>
       <tbody>
@@ -54,8 +61,10 @@
         <tr><td data-label="Unidad">Tecnología Aplicada a la Enseñanza del Inglés</td><td data-label="Régimen">Anual, promocional</td><td data-label="Cursar">Sin correlatividades</td><td data-label="Aprobar">Sin correlatividades</td></tr>
       </tbody>
     </table>
+    </details>
 
-    <h2>Segundo año</h2>
+    <details>
+      <summary>Segundo año</summary>
     <table>
       <thead><tr><th>Unidad curricular</th><th>Régimen</th><th>Para cursar, regularizar</th><th>Para aprobar, tener aprobado</th></tr></thead>
       <tbody>
@@ -72,8 +81,10 @@
         <tr><td data-label="Unidad">Robótica y Programación en la Enseñanza del Inglés</td><td data-label="Régimen">Anual, promocional</td><td data-label="Cursar">Tecnología Aplicada a la Enseñanza del Inglés</td><td data-label="Aprobar">Tecnología Aplicada a la Enseñanza del Inglés</td></tr>
       </tbody>
     </table>
+    </details>
 
-    <h2>Tercer año</h2>
+    <details>
+      <summary>Tercer año</summary>
     <table>
       <thead><tr><th>Unidad curricular</th><th>Régimen</th><th>Para cursar, regularizar</th><th>Para aprobar, tener aprobado</th></tr></thead>
       <tbody>
@@ -90,8 +101,10 @@
         <tr><td data-label="Unidad">Metodologías activas de aprendizaje</td><td data-label="Régimen">Anual, promocional</td><td data-label="Cursar">Robótica y Programación en la Enseñanza del Inglés</td><td data-label="Aprobar">Robótica y Programación en la Enseñanza del Inglés</td></tr>
       </tbody>
     </table>
+    </details>
 
-    <h2>Cuarto año</h2>
+    <details>
+      <summary>Cuarto año</summary>
     <table>
       <thead><tr><th>Unidad curricular</th><th>Régimen</th><th>Para cursar, regularizar</th><th>Para aprobar, tener aprobado</th></tr></thead>
       <tbody>
@@ -105,12 +118,14 @@
         <tr><td data-label="Unidad">Innovación Pedagógica</td><td data-label="Régimen">Anual, promocional</td><td data-label="Cursar">Metodologías activas de aprendizaje</td><td data-label="Aprobar">Metodologías activas de aprendizaje</td></tr>
       </tbody>
     </table>
+    </details>
   </section>
 
   <section id="tec" hidden>
     <div class="aviso"><strong>Plan de estudios:</strong> Resolución SPEPM 239/00.</div>
 
-    <h2>Primer año</h2>
+    <details>
+      <summary>Primer año</summary>
     <table>
       <thead><tr><th>Unidad curricular</th><th>Régimen</th><th>Para cursar, regularizar</th><th>Para aprobar, tener aprobado</th></tr></thead>
       <tbody>
@@ -123,8 +138,10 @@
         <tr><td data-label="Unidad">Inglés Técnico I</td><td data-label="Régimen">No disponible</td><td data-label="Cursar">Sin correlatividades</td><td data-label="Aprobar">Sin correlatividades</td></tr>
       </tbody>
     </table>
+    </details>
 
-    <h2>Segundo año</h2>
+    <details>
+      <summary>Segundo año</summary>
     <table>
       <thead><tr><th>Unidad curricular</th><th>Régimen</th><th>Para cursar, regularizar</th><th>Para aprobar, tener aprobado</th></tr></thead>
       <tbody>
@@ -140,6 +157,7 @@
         <tr><td data-label="Unidad">Tesis</td><td data-label="Régimen">No disponible</td><td data-label="Cursar">Todas las materias de 2° año regularizadas</td><td data-label="Aprobar">Todas las materias de 1° año aprobadas</td></tr>
       </tbody>
     </table>
+    </details>
   </section>
 </main>
 <script>
